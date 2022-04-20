@@ -4,17 +4,18 @@
     <title>GNUstep.org</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bs-theme-gnustep.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script><!-- jQuery is necessary for Bootstrap's plugins) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-<link rel="SHORTCUT ICON" href="/images/gnustep-favicon.ico">
+    <link rel="icon" href="images/gnustep-favicon.ico">
+    <style>
+        .jumbotron {margin-bottom: 0px;}
+        .carousel-caption {text-shadow: 1px 2px 3px rgba(0,0,0,.6);font-weight: bolder;}
+   </style>
 </head>
 <body>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
-
- 
+<!-- GNUstep website navigation -->
  <nav class="navbar navbar-inverse" role="navigation" style="margin-bottom: 0px;">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -24,9 +25,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
-    <div class="navbar-brand"><img src="images/GNUstepLogo_Square.png" alt="GS logo"></div>
+    <div class="navbar-brand"><img src="images/logo.png" alt="the GNUstep logo inspired by yin-yang symbol"></div>
     </div>
-    
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
@@ -59,70 +59,69 @@
         </ul>
         </li>
     </ul>
-
     <ul class="nav navbar-nav navbar-right">
         <li><a href="http://wiki.gnustep.org/index.php/Report_Bugs">Report Bugs</a></li>
     </ul>
     </div>
 </nav>
-
-    <div class="jumbotron" style="margin-bottom: 0px;">
-      <div class="container">
-       <p>GNUstep is a mature Framework, suited for desktop and server applications. The framework closely follows Apple's Cocoa APIs. <a href="#users">Users will find applications and full desktop projects</a> to install. <a href="#developers">Developers will find tools and libraries for writing portable applications</a> (macOS, Windows, Linux, BSD, iOS, Android, x86/ARM and others).</p>
-      </div>
+<!-- Introduction -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>GNUstep framework and applications</h1>
+        <h2>GNUstep is a mature framework, suited for desktop and server applications. The framework closely follows Apple's Cocoa APIs. <a href="#users">Users will find applications and full desktop projects</a> to install. <a href="#developers">Developers will find tools and libraries for writing portable applications</a> (macOS, Windows, Linux, BSD, iOS, Android, x86/ARM and others).</h2>
     </div>
-
+</div>
 <!-- Slideshow Carousel -->
-    <div id="showcaseCarousel"class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#showcaseCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#showcaseCarousel" data-slide-to="1"></li>
-        <li data-target="#showcaseCarousel" data-slide-to="2"></li>
-        <li data-target="#showcaseCarousel" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="images/screenshots/GNUstep-with-Nesedah-theme-macOS-lookalike-desktop.jpg" alt="A GNUstep desktop can use themes to look like Apple's macOS and mimics macOS">
-            <div class="container">
-            <div class="carousel-caption">
-                <h1>Theming</h1>
-                <p>With themes, GNUstep can be made as beautiful as macOS</p>
-                <p><a class="btn btn-lg btn-primary"  href="experience/Theming.html" role="button">Availables themes</a></p>
-            </div>
-            </div>
+<div id="showcaseCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+    <li data-target="#showcaseCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#showcaseCarousel" data-slide-to="1"></li>
+    <li data-target="#showcaseCarousel" data-slide-to="2"></li>
+    <li data-target="#showcaseCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <img src="images/screenshots/GNUstep-with-Nesedah-theme-macOS-lookalike-desktop.jpg" alt="A GNUstep desktop can use themes to look like Apple's macOS and mimics macOS">
+        <div class="container">
+        <div class="carousel-caption">
+            <h2>Theming</h2>
+            <p>With themes, GNUstep can be made as beautiful as macOS</p>
+            <p><a class="btn btn-lg btn-primary"  href="experience/Theming.html" role="button">See availables themes</a></p>
         </div>
-        <div class="item">
-            <img src="images/screenshots/GWorkspace-from-GNUstep-with-traditional-NextStep-theme.jpg" alt="Screenshot of GNUstep GWorkspace file manager which manage files and desktop">
-            <div class="container">
-            <div class="carousel-caption">
-                <h1>GWorkspace</h1>
-                <p>Workspace Manager, File Manager with content inspectors and metadata search.</p>
-                <p><a class="btn btn-lg btn-primary" href="experience/GWorkspace.html" role="button">Learn more</a></p>
-            </div>
-            </div>
         </div>
-        <div class="item">
-            <img src="images/screenshots/ProjectCenter-from-GNUstep-on-Linux.jpg" alt="GNUstep Project Center is a free software IDE powerful as Apple's XCode">
-            <div class="container">
-            <div class="carousel-caption">
-                <h1>Project Center</h1>
-                <p>IDE and GUI development, GNUmakefile generation and GORM real-time integration.</p>
-                <p><a class="btn btn-lg btn-primary" href="developers/index.html" role="button">Developers tools</a></p>
-            </div>
-            </div>
-        </div>
-        <div class="item">
-            <img src="images/screenshots/ProjectCenter-from-GNUstep-on-windows.jpg" alt="GNUstep Project Center IDE can run on Windows">
-            <div class="container">
-            <div class="carousel-caption">
-                <h1>Windows Compatibility</h1>
-                <p>GNUstep can easily be used to port or create applications on other platforms including Windows.</p>
-                <p><a class="btn btn-lg btn-primary" href="developers/index.html" role="button">Learn more</a></p>
-            </div>
-            </div>
-        </div>
-      </div>
     </div>
+    <div class="item">
+        <img src="images/screenshots/GWorkspace-from-GNUstep-with-traditional-NextStep-theme.jpg" alt="Screenshot of GNUstep GWorkspace on Linux, a file manager which manage files and desktop">
+        <div class="container">
+        <div class="carousel-caption">
+            <h2>File Manager</h2>
+            <p>GWorkspace, desktop and file manager with inspectors and metadata search</p>
+            <p><a class="btn btn-lg btn-primary" href="experience/GWorkspace.html" role="button">Discover GNUstep applications</a></p>
+        </div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="images/screenshots/ProjectCenter-from-GNUstep-on-Linux.jpg" alt="Screenshot of GNUstep Project Center IDE running on Linux, Project Center is a free software IDE powerful as Apple's XCode">
+        <div class="container">
+        <div class="carousel-caption">
+            <h2>Project Center IDE</h2>
+            <p>IDE and GUI development, GNUmakefile generation and GORM real-time integration</p>
+            <p><a class="btn btn-lg btn-primary" href="developers/index.html" role="button">Code with developers tools</a></p>
+        </div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="images/screenshots/ProjectCenter-from-GNUstep-on-windows.jpg" alt="GNUstep Project Center IDE can run on Windows and macOS too">
+        <div class="container">
+        <div class="carousel-caption">
+            <h2>Windows Compatible</h2>
+            <p>GNUstep makes easy to port or create apps on Windows, Android and macOS</p>
+            <p><a class="btn btn-lg btn-primary" href="developers/index.html" role="button">Learn the GNUstep framework</a></p>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
 <!-- End of Carousel -->
 
     <div class="container">
