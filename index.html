@@ -16,7 +16,7 @@
 </head>
 <body>
 <!-- GNUstep website navigation -->
- <nav class="navbar navbar-inverse" role="navigation" style="margin-bottom: 0px;">
+<nav class="navbar navbar-inverse" role="navigation" style="margin-bottom: 0px;">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -67,8 +67,8 @@
 <!-- Introduction -->
 <div class="jumbotron">
     <div class="container">
-        <h1 style="font-size: 2.5em; font-family:  serif;">The GNUstep Framework And Applications</h1>
-        <h2 style="font-size: 1.8em; font-family:  serif;">GNUstep is a mature framework suited for desktop and server applications. The framework closely follows Apple's Cocoa APIs. Users will find <a href="#users">applications and full desktop projects</a> to install. Developers will find <a href="#developers">tools and libraries for writing portable applications</a> (macOS, Windows, Linux, BSD, iOS, Android, x86/ARM and others).</h2>
+        <h1 style="font-size:2.5em;font-family:serif;">The GNUstep Framework And Applications</h1>
+        <h2 style="font-size:1.8em;font-family:serif;line-height:1.3em;">GNUstep is a framework that follows Apple's Cocoa APIs. Portable and mature it is suited for desktop and server apps. Users will find <a href="#users">applications and full desktop projects</a> to install. Developers will find <a href="#developers">tools and libraries for writing portable apps</a> for macOS, Windows, Linux, BSD, iOS, Android, on x86/ARM and others.</h2>
     </div>
 </div>
 <!-- Slideshow Carousel -->
@@ -96,7 +96,7 @@
         <div class="carousel-caption">
             <h2>Advanced apps</h2>
             <p>GWorkspace, desktop and file manager with inspectors and metadata search</p>
-            <p><a class="btn btn-lg btn-primary" href="experience/GWorkspace.html" role="button">Discover GNUstep applications</a></p>
+            <p><a class="btn btn-lg btn-primary" href="experience/apps.html" role="button">Discover GNUstep applications</a></p>
         </div>
         </div>
     </div>
@@ -123,53 +123,57 @@
     </div>
 </div>
 <!-- End of Carousel -->
+<!--  User experience -->
+<div class="container">
+    <a name="users"> </a>
+    <h2 class="page-header">Well conceived user experience</h2>
+<!--  quality of apps . fast, low resources, ergonomic      -->
+    <p>Some really good applications have been developped with the GNUstep framework. All GNUstep applications are well integrated and use native look and feel of operating systems.</p>
+    <h3>Ergonomic applications</h3>
+    <p>All GNUstep applications provide a consistent, ergonomic, user experience with a high quality GUI, because GNUstep is build on giants shoulder, thanks to Steve Jobs and his team of conceptors at Apple and Next Computer. The superior design and consistent interface comes directly from <a href="https://en.wikipedia.org/wiki/NeXTSTEP">NextStep</a> and Apple specifications.</p>
+    <h3>Green applications</h3>
+    <p>Being based of the original NextStep framework our apps use low resources. All of them are fast and full of features even on an old computers.</p>
+    <h3>Available on your Operating System</h3>
+    <p>GNUstep applications can be installed on Windows, macOS, Linux, the BSD family and other Unixes. Some apps are also available for Android and iOS.</p>
+    <h3>Full desktop</h3>
+    <p>Some free software desktop projects have been started, mainly for Linux and BSD systems, using GNUstep as a solid foundation. The completion of a desktop environment is done by other projects.</p>
+    <ul>
+       <li><a href="https://github.com/trunkmaster/nextspace">NextSpace</a> try to rebuild the user experience of NeXTSTEP famous desktop. With an accurate, clear, grayish and boring interface that helps, not hinder, to get your job done.</li>
+       <li><a href="http://www.etoile-project.org/">Étoilé</a> looks more like macOS. It is designed around the things people do with computers: create, collaborate, and learn. It should be portable to most operating systems.</li>
+       <li><a href="http://www.nongnu.org/gap/">The GNUstep Application Project</a> provide applications that users can install inside WindowMaker, with GNUstep's GWorkspace as a desktop manager. This is a bit tough but provide a decent desktop for advanced users on old computers.</li>
+       <li>Other projects have been started</li>
+    </ul>
 
-    <div class="container">
-      <a name="users"> </a>
-      <h2 class="page-header">User experience</h2>
-      <div class="img-thumbnail floatright"> <a href="images/ftp_sleek.png"><img src="images/ftp_sleek-crop.jpg" alt="Menu Screenshot"></a> </div>
-      
-      <p>GNUstep provides the foundations for a portable desktop environment, like offering the base Workspace API (implemented by the official GWorkspace, but user-replaceable) and a set of useful but not mandatory applications. The completion of a <emphasis>desktop environment</emphasis> is done by other projects like the <a href="http://www.nongnu.org/gap/">The GNUstep Application Project</a> or <a href="http://www.etoile-project.org/">Etoile</a>.
-      </ul>
-      <p><b>More?</b> </p>
-      <div style="margin-left: 20px;">
-        Read more about our user <a href="experience/apps.html">Experience</a>, official applications and concepts.<br>
-        Directly check the comprehensive list of applications on our  <a href="http://wiki.gnustep.org/index.php/Category:Applications">Wiki
-          application pages</a> and in the <a href="http://www.gnustep.org/softwareindex/">Software Index</a><br>
-        <br>
-      </div>
-    </div>
+    <p align="center"><a class="btn btn-lg btn-primary"  href="experience/apps.html" role="button">Browse applications and user docs</a></p>
+</div>
+<!--  Developer experience    -->
+<div class="container">
+    <a name="developers"> </a>
+    <h2 class="page-header">Developer experience</h2>
+    <p>GNUstep provides an environment to easily develop advanced GUI desktop applications as well as server applications.</p>
+    <h3>Code once, compile everywhere</h3>
+    <p> GNUstep's core framework provides open source version of the Apple's Cocoa APIs and tools for as many platforms as possible. GNUstep seeks to be source code compatible with Cocoa, it can thus be used to develop and build cross-platform applications between Macintosh (Cocoa), Unix (Solaris) and Unix-like (GNU/Linux and GNU/Hurd, NetBSD, OpenBSD, FreeBSD) platforms as well as <a href="windows/index.html">Windows</a></p>
+    <h3>Faster coding with developers tools</h3>
+    <p>GNUstep provides a robust implementation of the AppKit and Foundation libraries from Apple macOS and NextStep. The GNUstep team has also build <a href="experience/DeveloperTools.html">advanced development tools</a> available on every OS. These include the polished interface designer <a href="experience/Gorm.html">Gorm</a> (very similar to InterfaceBuilder on macOS) and the IDE <a href="experience/ProjectCenter.html">ProjectCenter</a> (like ProjectBuilder / Xcode on Apple's macOS). These tools provides interfaces to compilers thas support several programming languages.
+    <h3>Develop in your favorite language</h3>
+    <p>GNUstep's main development language is Objective-C. But our softwares are not limited to Objective-C and developers can quickly design and build cross-platform applications in Objective-C, Java, Ruby, Swift and C language. Gtk bindings</p>
 
-    <div class="container">
-      <h2 class="page-header">Developer experience</h2>
-      <div class="img-thumbnail floatright"> <a href="images/full-screenshot1.png"><img src="images/screenshot1.png" alt="Menu Screenshot"></a> </div>
-      <p>GNUstep provides an environment to easily develop
-        advanced GUI desktop applications as well as server applications.</p>
-      <p> GNUstep's core framework provides open source version of the Cocoa APIs and tools for as many platforms as possible. <br>
-        GNUstep provides a robust implementation of the AppKit and
-        Foundation libraries as well as the  <a href="experience/DeveloperTools.html">development tools</a>
-        including the advanced interface designer <a href="experience/Gorm.html">Gorm</a> (the InterfaceBuilder) and the IDE 
-        <a href="experience/ProjectCenter.html">ProjectCenter</a> (ProjectBuilder/Xcode).<br>
-	Thematic instead provides a user-friendly access to <a href="experience/Theming.html">theming</a>.
-      </p>
-      <p>GNUstep seeks to be source code compatible with Cocoa, it can
-        thus be used to develop and build cross-platform applications
-        between Macintosh (Cocoa),  Unix (Solaris) and Unix-like (GNU/Linux and GNU/Hurd, NetBSD, OpenBSD, FreeBSD) platforms as well as <a href="windows/index.html">Windows</a>
-        <br>
-        GNUstep's main development language is Objective-C, but
-        GNUstep is not limited to that. </p>
+    <p align="center"><a class="btn btn-lg btn-primary"  href="experience/apps.html" role="button">Learn with our extensive documentation</a></p>
       <p><b>More?</b> </p>
       <div style="margin-left: 20px;"> 
         About <a href="http://wiki.gnustep.org/index.php/ObjC2_FAQ">Objective-C 2.0</a> 
         <br>
         Need help building from source code? Look at our <a href="http://wiki.gnustep.org/index.php/User_Guides">Guides</a>.
       </div>
-    </div>
-    
+</div>
+<!--  downloads  -->
     <div class="container">
-      <h2 class="page-header">Downloads &amp; Code</h2>
+      <h2 class="page-header">See it in action ? Downloads &amp; Code</h2>
       <ul>
-	<li><b><a href="https://github.com/gnustep/">GNUstep on GitHub</a>: Access our Source repository</b></li>
+	<li>LiveCD
+        <li>install on Linux or BSD
+        <li>etc.
+<b><a href="https://github.com/gnustep/">GNUstep on GitHub</a>: Access our Source repository</b></li>
 	<li><b>
             <a href="resources/sources.html">Download page</a>: Select mirror for downloads of release packages for users and developers.
         </b></li>
